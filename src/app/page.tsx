@@ -49,11 +49,11 @@ export default function Home() {
       </div>
       <main className="flex flex-col p-8 ">
         <section className="font-mono flex flex-col gap-2">
-          <p>I'm a fullstack engineer with over 7 years professional experience in the field </p>
-          <p> I always say I'm a core Pythonista <img src="https://cdn3.emoji.gg/emojis/1887_python.png" width="16px" height="16px" alt="python" className="inline"/>
+          <p>I&apos;m a fullstack engineer with over 7 years professional experience in the field </p>
+          <p> I always say I&apos;m a core Pythonista <img src="https://cdn3.emoji.gg/emojis/1887_python.png" width="16px" height="16px" alt="python" className="inline"/>
           &nbsp;and a very good Rusticean 🦀 </p>
           <p>I play Call Of Duty as I previously aspired to be a Marine. I love sprinting and still weighs 216 pounds 😁</p>
-          <p>Lastly, I love vim. You'd love it as well, Give it a shot</p>
+          <p>Lastly, I love vim. You&apos;d love it as well, Give it a shot</p>
         </section>
 
         <section className="mt-8">
