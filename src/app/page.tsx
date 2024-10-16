@@ -28,11 +28,11 @@ export default function Home() {
       <div className="absolute overflow-hidden w-full h-screen z-10 bg-transparent ">
         <Meteors />
       </div>
-      <div className="w-full left-4 top-4 flex justify-between mb-8 p-4 z-20">
+      <div className="w-full left-4 top-4 flex justify-between items-center mb-8 p-2 md:p-4 z-20">
         <span>@boldrack</span>
 
         <div className="socials flex items-center gap-4">
-          <RainbowButton className="mr-4"><a className="text-white text-sm" href="#" download>my Resume</a></RainbowButton>
+          <RainbowButton className="mr-2 md:mr-4 sm:px-4 sm:py-2"><a className="text-white text-xs md:text-md" href="#" download>Resume</a></RainbowButton>
           <a href="https://twitter.com/boldrack" target="_blank">
             <span><Twitter className="stroke-1"/></span>
           </a>
@@ -47,7 +47,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <main className="flex flex-col p-8 ">
+      <main className="flex flex-col p-4 md:p-8 ">
         <section className="font-mono flex flex-col gap-2">
           <p>I&apos;m a fullstack engineer with over 7 years professional experience in the field </p>
           <p> I always say I&apos;m a core Pythonista <img src="https://cdn3.emoji.gg/emojis/1887_python.png" width="16px" height="16px" alt="python" className="inline"/>
@@ -60,7 +60,7 @@ export default function Home() {
           <h4 className="text-lg underline-offset-8 underline decoration-dashed">Recent Projects</h4>
           <div className="projects flex flex-col gap-4 mt-8">
             {PROJECTS.map(project => 
-            <div key={project.title} className="project-item flex border border-slate-300 rounded-md w-full h-48 overflow-hidden">
+            <div key={project.title} className="project-item flex border border-slate-300 rounded-md w-full md:h-48 overflow-hidden">
               <div className="logo basis-1/2 border flex items-center justify-center">{project.title}</div>
               <div className="details basis-1/2 p-4 space-y-4">
               <p>
