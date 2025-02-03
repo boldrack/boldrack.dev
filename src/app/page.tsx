@@ -31,7 +31,7 @@ export default function Home() {
       </div>
       <main className="flex flex-col p-4 md:p-8 ">
         <section className="font-mono flex flex-col gap-4">
-            <p>I'm Taiwo -– a software developer who loves building bridges between ideas and technology. I specialize in turning complex problems into streamlined, user-friendly solutions, crafting code that’s both efficient and adaptable.</p>
+            <p>I&apos;m Taiwo -– a software developer who loves building bridges between ideas and technology. I specialize in turning complex problems into streamlined, user-friendly solutions, crafting code that&apos;s both efficient and adaptable.</p>
 
             <p>My <Link href="https://s3.us-east-1.amazonaws.com/boldrack.dev/Taiwo+Ajiboye+Resume+25.pdf" download className="underline underline-offset-4 decoration-dashed cursor-pointer">
             resume</Link> offers a deeper look into my skills, experience, and the value I can add to your team.</p>
@@ -64,7 +64,7 @@ export default function Home() {
           CSS/SASS/LESS, TailwindCSS, Redux, Zustand, MongoDB, Postgresql, Git, Github, Gitlab, Linux.</p>
 
         <p>I believe in continuous learning and a clean, intuitive approach to development. 
-          When I'm not coding, you might find me exploring the latest tech trends, contributing to open-source projects, 
+          When I&apos;m not coding, you might find me exploring the latest tech trends, contributing to open-source projects, 
           or experimenting with new frameworks.</p>
         </section>
 
