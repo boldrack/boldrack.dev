@@ -7,7 +7,7 @@ import { PROJECTS } from "./_components/mock";
 export default function Home() {
   return (
     <div className="relative flex flex-col min-h-screen font-[family-name:var(--font-geist-sans)] ">
-      <div className="absolute overflow-hidden w-full h-screen z-10 bg-transparent ">
+      <div className="absolute overflow-hidden w-full h-screen -z-10 bg-transparent ">
         <Meteors />
       </div>
       <div className="w-full left-4 top-4 flex justify-between items-center mb-8 p-2 md:p-4 z-20">
@@ -33,7 +33,7 @@ export default function Home() {
         <section className="font-mono flex flex-col gap-4">
             <p>I'm Taiwo -– a software developer who loves building bridges between ideas and technology. I specialize in turning complex problems into streamlined, user-friendly solutions, crafting code that’s both efficient and adaptable.</p>
 
-            <p>My <Link href="https://s3.us-east-1.amazonaws.com/boldrack.dev/Taiwo+Ajiboye+Resume+25.pdf" download>
+            <p>My <Link href="https://s3.us-east-1.amazonaws.com/boldrack.dev/Taiwo+Ajiboye+Resume+25.pdf" download className="underline underline-offset-4 decoration-dashed cursor-pointer">
             resume</Link> offers a deeper look into my skills, experience, and the value I can add to your team.</p>
 
             <p>Check out some of my work below – each project is a step in my journey toward mastering the art of software development. Let’s build something amazing together! 🚀</p>
@@ -57,6 +57,15 @@ export default function Home() {
             </div>
             )}
           </div>
+        </section>
+
+        <section className="font-mono flex flex-col gap-4 mt-12">
+          <p>I build with JavaScript/Typescript, Python, React, NextJS, Rust, Django, Flask, FastAPI, 
+          CSS/SASS/LESS, TailwindCSS, Redux, Zustand, MongoDB, Postgresql, Git, Github, Gitlab, Linux.</p>
+
+        <p>I believe in continuous learning and a clean, intuitive approach to development. 
+          When I'm not coding, you might find me exploring the latest tech trends, contributing to open-source projects, 
+          or experimenting with new frameworks.</p>
         </section>
 
       </main>
