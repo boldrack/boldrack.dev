@@ -108,7 +108,10 @@ const config: Config = {
   			'shimmer-slide': 'shimmer-slide var(--speed) ease-in-out infinite alternate',
   			'spin-around': 'spin-around calc(var(--speed) * 2) infinite linear',
   			rainbow: 'rainbow var(--speed, 2s) infinite linear'
-  		}
+  		},
+      fontFamily: {
+        literata: "Literata",
+      }
   	}
   },
   plugins: [require("tailwindcss-animate")],

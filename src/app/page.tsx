@@ -1,27 +1,9 @@
+import Link from "next/link";
 import Meteors from "@/components/ui/meteors"
 import { RainbowButton } from "@/components/ui/rainbow-button";
 import { Linkedin, Mail, Send, Twitter } from "lucide-react";
+import { PROJECTS } from "./_components/mock";
 
-const PROJECTS = [
-  {
-    image: '', 
-    url: 'https://foodmenu.ng',
-    title: 'Foodmenu',
-    description: 'A digital food menu platform for restaurants and food cafeterai. Not only does it replace an actual food menu but also serves as a listing, indexer platform for diners to find meals and foods around their current location. '
-  },
-  {
-    image: '', 
-    url: 'https://houz.ng',
-    title: 'Houz',
-    description: 'A user-friendly and innovative marketplace designed to simplify your apartment search. You  can Browse a wide range of listings and access detailed insights to make your search effortless'
-  },
-  {
-    image: '', 
-    url: 'https://tablebin.app',
-    title: 'Tablebin',
-    description: 'An api based table dump platform for application output. its like pastebin but for tables. Allows you to programmatically create tables with rich features and formatting. Can also download, embed and share tables  and its underlying data'
-  }
-]
 export default function Home() {
   return (
     <div className="relative flex flex-col min-h-screen font-[family-name:var(--font-geist-sans)] bg-gradient-to-br from-transparent via-transparent to-slate-900 ">
@@ -29,7 +11,7 @@ export default function Home() {
         <Meteors />
       </div>
       <div className="w-full left-4 top-4 flex justify-between items-center mb-8 p-2 md:p-4 z-20">
-        <span>@boldrack</span>
+        <span className="font-mono">@boldrack</span>
 
         <div className="socials flex items-center gap-4">
           <RainbowButton className="mr-2 md:mr-4 sm:px-4 sm:py-2"><a className="text-white text-xs md:text-md" href="#" download>Resume</a></RainbowButton>
@@ -48,13 +30,15 @@ export default function Home() {
         </div>
       </div>
       <main className="flex flex-col p-4 md:p-8 ">
-        <section className="font-mono flex flex-col gap-2">
-          <p>I&apos;m a fullstack engineer with over 7 years professional experience in the field </p>
-          <p> I always say I&apos;m a core Pythonista <img src="https://cdn3.emoji.gg/emojis/1887_python.png" width="16px" height="16px" alt="python" className="inline"/>
-          &nbsp;and a very good Rusticean 🦀 </p>
-          <p>I play Call Of Duty as I previously aspired to be a Marine. I love sprinting and still weighs 216 pounds 😁</p>
-          <p>Lastly, I love vim. You&apos;d love it as well, Give it a shot</p>
+        <section className="font-mono flex flex-col gap-4">
+            <p>I'm Taiwo -– a software developer who loves building bridges between ideas and technology. I specialize in turning complex problems into streamlined, user-friendly solutions, crafting code that’s both efficient and adaptable.</p>
+
+            <p>My <Link href="https://s3.us-east-1.amazonaws.com/boldrack.dev/Taiwo+Ajiboye+Resume+25.pdf" download>
+            resume</Link> offers a deeper look into my skills, experience, and the value I can add to your team.</p>
+
+            <p>Check out some of my work below – each project is a step in my journey toward mastering the art of software development. Let’s build something amazing together! 🚀</p>
         </section>
+        
 
         <section className="mt-8">
           <h4 className="text-lg underline-offset-8 underline decoration-dashed">Recent Projects</h4>
