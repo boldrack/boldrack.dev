@@ -6,7 +6,7 @@ import { PROJECTS } from "./_components/mock";
 
 export default function Home() {
   return (
-    <div className="relative flex flex-col min-h-screen font-[family-name:var(--font-geist-sans)] bg-gradient-to-br from-transparent via-transparent to-slate-900 ">
+    <div className="relative flex flex-col min-h-screen font-[family-name:var(--font-geist-sans)] ">
       <div className="absolute overflow-hidden w-full h-screen z-10 bg-transparent ">
         <Meteors />
       </div>
